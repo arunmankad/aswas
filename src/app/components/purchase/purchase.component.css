@@ -1,0 +1,27 @@
+.table{
+    padding: 5px;
+}
+.table > tbody > tr > td, .table > tfoot > tr > td, .table > thead > tr > th {
+ padding: 1px;
+}
+.purchase-entry-table-text-input {
+    font-size: 10px;
+}
+
+.small-text-input{
+    width: 30px;
+}
+.medium-text-input{
+    width: 45px;
+}
+.large-text-input{
+    width: 60px;
+}
+.xtralarge-text-input{
+    min-width: 90px;
+    width:100%;
+}
+
+.streatchable-column{
+    width: 100%;
+}

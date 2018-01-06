@@ -1,0 +1,97 @@
+<!--
+  <div class="purchase-container">
+      <form class="form-inline" (submit)="formSubmited()" >
+          <div class="form-group">
+            <label for="email">Email address:</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd">
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox"> Remember me</label>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <br>
+      <form [formGroup]="purchaseForm">
+        <table class="table table-striped"(click)="tableClicked($event)" (keyup)="tableClicked($event)" #myTable>
+          <thead> 
+            <tr>
+              <th >Sl#</th>
+              <th >O#</th>
+              <th class="streatchable-column" >Product</th>
+              <th >Company</th>
+              <th >Batch</th>
+              <th >ExpD</th>
+              <th >Pck</th>
+              <th >Pr/Qty</th>
+              <th >Oty</th>
+              <th >Rate</th>
+              <th >Disc</th>
+              <th >NetRate</th>
+              <th >Amt</th>
+              <th >Mrp</th>
+              <th >SRate</th>
+              <th >Free</th>
+            </tr>
+          </thead>
+          <div formArrayName="items">
+              <tbody  >
+                  <tr >
+                    <td ></td>
+                    <td ><input formControlName="order_number"  class="purchase-entry-table-text-input small-text-input"  id="Order"></td>
+                    <td class="streatchable-column" ><input formControlName="product" class="purchase-entry-table-text-input xtralarge-text-input"  id="product"></td>
+                    <td ><input formControlName="company" class="purchase-entry-table-text-input large-text-input" id="company"></td>
+                    <td ><input formControlName="batch" class="purchase-entry-table-text-input medium-text-input" id="batch"></td>
+                    <td ><input formControlName="expiry_date" class="purchase-entry-table-text-input medium-text-input"  id="expDate"></td>
+                    <td ><input formControlName="pack" class="purchase-entry-table-text-input small-text-input"  id="pack"></td>
+                    <td ><input formControlName="price_per_quantity" class="purchase-entry-table-text-input medium-text-input" id="price_qty"></td>
+                    <td ><input formControlName="quantity" class="purchase-entry-table-text-input medium-text-input"  id="qty"></td>
+                    <td ><input formControlName="rate" class="purchase-entry-table-text-input small-text-input"  id="rate"></td>
+                    <td ><input formControlName="discount" class="purchase-entry-table-text-input small-text-input"  id="discount"></td>
+                    <td ><input formControlName="netrate" class="purchase-entry-table-text-input medium-text-input"  id="netRate"></td>
+                    <td ><input formControlName="amount" class="purchase-entry-table-text-input medium-text-input"  id="amt"></td>
+                    <td ><input formControlName="mrp" class="purchase-entry-table-text-input small-text-input"  id="mrp"></td>
+                    <td ><input formControlName="sales_rate" class="purchase-entry-table-text-input medium-text-input"  id="vs"></td>
+                    <td ><input formControlName="free" class="purchase-entry-table-text-input small-text-input"  id="Free"></td>
+                  </tr>      
+                </tbody>
+          </div>
+          
+        </table>
+      </form>
+      <input type="button" value="test" (click)="handleClick($event, myTable)">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-1">
+              <div class="row">
+                  <div>Sl#</div>
+                  <div>Or#</div>
+              </div>
+            </div>
+            <div class="row col-lg-4">
+                <div>Product</div>
+                <div>Company</div>
+            </div>
+            <div class="row col-lg-4">
+                <div>Batch</div>
+                <div>ExpD</div>
+                <div>Pck</div>
+                <div>Pr/Qty</div>
+                <div>Qty</div>
+                <div>Rate</div>
+            </div>
+            <div class="row col-lg-3">
+                <div>Disc</div>
+                <div>NetRate</div>
+                <div>Amt</div>
+                <div>Mrp</div>
+                <div>SRate</div>
+                <div>Free</div>
+            </div>
+        </div>
+    </div>
+  -->
